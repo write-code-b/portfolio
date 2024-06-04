@@ -1,0 +1,101 @@
+.container {
+  display: grid;
+  grid-gap: 62px;
+  grid-template-rows: 1fr 6fr 2fr;
+}
+
+nav a,
+nav ul li {
+  min-width: 100px;
+}
+
+a {
+  text-decoration-line: none;
+  color: #222222;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header #logo {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 10%;
+  align-items: flex-end;
+  min-width: 400px;
+  width: 70%;
+  height: 100px;
+  padding: 0 10px 0 10px;
+  border-bottom: solid 0.7px;
+}
+
+nav ul {
+  display: flex;
+  gap: 10%;
+}
+
+nav li a {
+  font-size: 1.56rem;
+}
+
+/* main */
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .content {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.content .sticky_nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 66%;
+  font-size: 0.938rem;
+}
+
+.sticky_nav > div {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  width: 30%;
+  height: 30px;
+  padding: 4px;
+  background-color: #d4dfe6;
+}
+
+main .content section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+footer p:not(:last-child)::after {
+  content: "|";
+}
