@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>최민지 포트폴리오</title>
+    <link rel="stylesheet" href="../src/css/reset.css" />
     <link rel="stylesheet" href="../src/css/style.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
-          <a href="" id="logo">최민지</a>
           <ul>
-            <li><a href="">소개</a></li>
+            <a href="" id="logo">최민지</a>
+          </ul>
+          <ul>
+            <li class="nav_active"><a href="">소개</a></li>
             <li><a href="">경력</a></li>
           </ul>
         </nav>
@@ -20,13 +23,13 @@
       <main>
         <div class="content">
           <div class="sticky_nav">
-            <div>
+            <div class="tab active">
               <a href=""><span>01</span>자기소개</a>
             </div>
-            <div>
+            <div class="tab">
               <a href=""><span>02</span>기술</a>
             </div>
-            <div>
+            <div class="tab">
               <a href=""><span>03</span>연락처</a>
             </div>
           </div>
