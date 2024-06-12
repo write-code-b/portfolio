@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Minji Choi portfolio"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
     <title>최민지 포트폴리오</title>
-    <link rel="stylesheet" href="../src/css/reset.css" />
-    <link rel="stylesheet" href="../src/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav>
-          <ul>
-            <a href="" id="logo">최민지</a>
-          </ul>
-          <ul>
-            <li class="nav_active"><a href="">소개</a></li>
-            <li><a href="">경력</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="content">
-          <div class="sticky_nav">
-            <div class="tab active">
-              <a href=""><span>01</span>자기소개</a>
-            </div>
-            <div class="tab">
-              <a href=""><span>02</span>기술</a>
-            </div>
-            <div class="tab">
-              <a href=""><span>03</span>연락처</a>
-            </div>
-          </div>
-          <section id="introduce_section">
-            <h1>퍼블리셔 최민지입니다.</h1>
-            <p>HTML, CSS, Javascript를 활용한 퍼블리싱을 합니다. 전자교과서 관련 퍼블리싱 외주 프로젝트 경험이 있습니다. 앞으로도 교육, 출판 분야에서의 다양한 퍼블리싱 프로젝트를 진행할 계획입니다. 재택 업무를 희망하고, 오프라인 미팅은 가능합니다. 감사합니다.</p>
-          </section>
-          <section id="tech_section"></section>
-          <section id="contact_section"></section>
-        </div>
-      </main>
-      <footer>
-        <div>
-          <p>Copyright © 2024</p>
-          <p>최민지</p>
-          <p><a href="mailto:minjichoi.write@kakao.com">minjichoi.write@kakao.com</a></p>
-        </div>
-      </footer>
-    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
