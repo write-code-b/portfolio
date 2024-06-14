@@ -10,7 +10,7 @@ function Navbar(props) {
           </a>
         </ul>
         <ul>
-          <li class="nav_active">
+          <li className="nav_active">
             <a href="">소개</a>
           </li>
           <li>

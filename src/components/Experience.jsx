@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-function Contact(props) {
+function Experience(props) {
   return (
-    <section id="contact_section">
-      <h1>연락처입니다.</h1>
+    <section id="introduce_section">
+      <h1>퍼블리셔 최민지입니다.</h1>
       <p>
         HTML, CSS, Javascript를 활용한 퍼블리싱을 합니다. 전자교과서 관련
         퍼블리싱 외주 프로젝트 경험이 있습니다. 앞으로도 교육, 출판 분야에서의
@@ -14,4 +14,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default Experience;

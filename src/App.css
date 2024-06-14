@@ -225,12 +225,16 @@ main .content {
   background-color: #d4dfe6;
 }
 
-.sticky_nav .active {
-  background-image: linear-gradient(to right, #767c80, #d4dfe6);
+.sticky_nav .tab {
+  cursor: pointer;
 }
 
 .sticky_nav .tab a {
   color: #ffffff;
+}
+
+.sticky_nav .active {
+  background-image: linear-gradient(to right, #767c80, #d4dfe6);
 }
 
 .sticky_nav .active a {
