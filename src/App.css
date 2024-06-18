@@ -257,9 +257,56 @@ main .content section h1 {
   font-weight: 500;
 }
 
+main .content section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 main .content section p {
   font-size: 1.25rem;
 }
+
+/* tech section */
+#tech_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#tech_section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tech_section p {
+  display: flex;
+  gap: 10px;
+}
+
+#tech_section .badge {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  background-color: #d4dfe6;
+  font-weight: 300;
+  /* cursor: pointer; */
+}
+
+/* #tech_section .tooltip_text {
+  visibility: hidden;
+  position: absolute;
+  width: 150px;
+  border-radius: 5px;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+}
+
+#tech_section .badge:hover .tooltip_text {
+  visibility: visible;
+} */
 
 /* footer */
 footer {
