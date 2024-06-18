@@ -1,15 +1,40 @@
 import { useEffect, useState } from "react";
 
 function Contact(props) {
+  const copyToClipboard = async (e) => {
+    try {
+      const link = e.target.parentNode.innerText;
+      console.log(`[Success] copy to clipboard / link: ${link}`);
+      await navigator.clipboard.writeText(link);
+    } catch (err) {
+      console.log("[contact.jsx] fail copy to clipboard");
+    }
+  };
+
   return (
     <section id="contact_section">
-      <h1>연락처입니다.</h1>
-      <p>
-        HTML, CSS, Javascript를 활용한 퍼블리싱을 합니다. 전자교과서 관련
-        퍼블리싱 외주 프로젝트 경험이 있습니다. 앞으로도 교육, 출판 분야에서의
-        다양한 퍼블리싱 프로젝트를 진행할 계획입니다. 재택 업무를 희망하고,
-        오프라인 미팅은 가능합니다. 감사합니다.
-      </p>
+      <p className="guide">을 클릭하면 복사가 됩니다!</p>
+      <div>
+        <h2>이메일</h2>
+        <div className="wrap">
+          <div className="badge">minjichoi.official@gmail.com</div>
+          <div className="copy_icon" onClick={copyToClipboard}></div>
+        </div>
+      </div>
+      <div>
+        <h2>깃헙</h2>
+        <div className="wrap">
+          <div className="badge">https://github.com/slow-wave</div>
+          <div className="copy_icon" onClick={copyToClipboard}></div>
+        </div>
+        <div className="wrap">
+          <div className="badge">
+            https://github.com/write-code-b
+            <div className="tooltip_text">퍼블리싱 관련 코드 저장소입니다.</div>
+          </div>
+          <div className="copy_icon" onClick={copyToClipboard}></div>
+        </div>
+      </div>
     </section>
   );
 }

@@ -233,7 +233,8 @@ main .content {
   color: #ffffff;
 }
 
-.sticky_nav .active {
+.sticky_nav .active,
+.sticky_nav .tab:hover {
   background-image: linear-gradient(to right, #767c80, #d4dfe6);
 }
 
@@ -254,16 +255,56 @@ main .content section {
 
 main .content section h1 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 main .content section h2 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 main .content section p {
   font-size: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  padding: 4px;
+  background-color: #d4dfe6;
+  font-weight: 300;
+  /* cursor: pointer; */
+}
+
+.tooltip_text {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  width: fit-content;
+  padding: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  background-color: #000000;
+}
+
+.badge:hover .tooltip_text {
+  visibility: visible;
+}
+
+.tooltip_text::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
 
 /* tech section */
@@ -284,29 +325,38 @@ main .content section p {
   gap: 10px;
 }
 
-#tech_section .badge {
-  display: inline-block;
-  position: relative;
-  padding: 4px;
-  background-color: #d4dfe6;
-  font-weight: 300;
-  /* cursor: pointer; */
+/* contact section */
+#contact_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-/* #tech_section .tooltip_text {
-  visibility: hidden;
-  position: absolute;
-  width: 150px;
-  border-radius: 5px;
-  z-index: 1;
-  color: #ffffff;
-  text-align: center;
-  background-color: #000000;
+#contact_section .wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-#tech_section .badge:hover .tooltip_text {
-  visibility: visible;
-} */
+#contact_section p.guide::before,
+#contact_section .copy_icon {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../public/images/copy_button.png") center / contain no-repeat;
+  cursor: pointer;
+}
+
+#contact_section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact_section p {
+  display: flex;
+  gap: 10px;
+}
 
 /* footer */
 footer {
