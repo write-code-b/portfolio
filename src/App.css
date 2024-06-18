@@ -184,18 +184,18 @@ nav ul {
   gap: 10%;
 }
 
-.nav_active a {
-  color: #2b90d9;
-}
-
-nav li a {
+nav > ul:nth-child(2) a {
   color: #ffffff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
   transition: transform 0.2s;
 }
 
-nav ul li:hover {
+nav > ul:nth-child(2) li.nav_active a {
+  color: #2b90d9;
+}
+
+nav ul:nth-child(2) li:hover {
   transform: scale(1.1);
 }
 
