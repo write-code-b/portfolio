@@ -343,6 +343,10 @@ main .content section p {
   gap: 10px;
 }
 
+#contact_section .copy_icon {
+  position: relative;
+}
+
 #contact_section p.guide::before,
 #contact_section .copy_icon {
   content: "";
@@ -350,6 +354,19 @@ main .content section p {
   height: 24px;
   background: url("../public/images/copy_button.png") center / contain no-repeat;
   cursor: pointer;
+}
+
+.copy_icon:hover .tooltip_text {
+  visibility: visible;
+  top: 0px;
+  left: 30px;
+  width: 30px;
+}
+
+.copy_icon:hover .tooltip_text::after{
+  bottom: 40%;
+  left: -10%;
+  border-color: transparent black transparent transparent;
 }
 
 #contact_section > div {
