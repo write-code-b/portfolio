@@ -10,6 +10,7 @@ function About(props) {
   const [isDefault, setIsDefault] = useState(true);
   // const [isPressed, setIsPressed] = useState("0");
   const [navs, setNavs] = useState(props.navs);
+  const [techData, setTechData] = useState(props.tech);
 
   function moveNav(id) {
     // setIsPressed(id);
@@ -31,6 +32,10 @@ function About(props) {
       setIsPressed={moveNav}
     />
   ));
+  console.log("tech", techData);
+  const techList = techData?.map((tech) => (
+    <Tech title={tech.title} tool={tech.tool} />
+  ));
 
   return (
     <main>
@@ -39,10 +44,11 @@ function About(props) {
         {isDefault || navState == "0" ? (
           <Introduce />
         ) : navState == "1" ? (
-          <Tech />
+          <section id="tech_section">{techList}</section>
         ) : (
           <Contact />
         )}
+        <div className="update">수정일_{props.updateDate}</div>
       </div>
     </main>
   );

@@ -271,6 +271,12 @@ main .content {
   margin-right: 20px;
 }
 
+.content .update {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
 main .content section {
   display: flex;
   gap: 30px;
@@ -436,6 +442,7 @@ main .content section p {
 
 .experience > div:last-child p {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

@@ -6,10 +6,20 @@ import Footer from "./components/Footer";
 import Main from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 
+const DATE = "2024년 6월 19일";
+
 const NAV_DATA = [
   { number: "0", name: "자기소개", isPressed: true },
   { number: "1", name: "기술", isPressed: false },
   { number: "2", name: "연락처", isPressed: false },
+];
+
+const TECH_DATA = [
+  { title: "프론트엔드", tool: ["HTML", "CSS", "Javascript"] },
+  { title: "백엔드", tool: ["Node.js", "Javascript"] },
+  { title: "디자인", tool: ["Figma", "Adobe Illustrator"] },
+  { title: "형상관리", tool: ["GIT", "SVN"] },
+  { title: "그 외 기술", tool: ["빅데이터분석기사", "python", "MySQL"] },
 ];
 
 const EXPERIENCE_DATA = [
@@ -40,8 +50,14 @@ function App(props) {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Main navs={navs} />}></Route>
-        <Route path="/about" element={<Main navs={navs} />}></Route>
+        <Route
+          path="/"
+          element={<Main navs={navs} updateDate={DATE} tech={TECH_DATA} />}
+        ></Route>
+        <Route
+          path="/about"
+          element={<Main navs={navs} updateDate={DATE} tech={TECH_DATA} />}
+        ></Route>
         <Route
           path="/Experience"
           element={<Experience desc={EXPERIENCE_DATA} />}

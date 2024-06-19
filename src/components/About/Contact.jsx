@@ -22,7 +22,10 @@ function Contact(props) {
       <div>
         <h2>이메일</h2>
         <div className="wrap">
-          <div className="badge">minjichoi.official@gmail.com</div>
+          <div className="badge">
+            minjichoi.official@gmail.com
+            <div className="tooltip_text">메일로 문의주시면 가능한 빨리 회신드리겠습니다.</div>
+          </div>
           <div
             className="copy_icon"
             onClick={(e) => copyToClipboard(tooltipRef1, e)}
