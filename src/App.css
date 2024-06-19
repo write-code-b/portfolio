@@ -273,7 +273,9 @@ main .content section p {
 }
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: fit-content;
   padding: 4px;
@@ -363,7 +365,7 @@ main .content section p {
   width: 30px;
 }
 
-.copy_icon:hover .tooltip_text::after{
+.copy_icon:hover .tooltip_text::after {
   bottom: 40%;
   left: -10%;
   border-color: transparent black transparent transparent;
@@ -376,6 +378,43 @@ main .content section p {
 }
 
 #contact_section p {
+  display: flex;
+  gap: 10px;
+}
+
+/* Experience */
+.year {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  padding-left: 20px;
+  background: radial-gradient(50% 50% at 50% 50%, #d9e1e8 0%, #2b90d9 100%);
+  font-size: 1.875rem;
+  font-weight: 200;
+}
+
+.experience {
+  font-size: 1.25rem;
+}
+
+.experience h2 {
+  margin-bottom: 10px;
+}
+
+.experience .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience .underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.experience > div:last-child p {
   display: flex;
   gap: 10px;
 }
