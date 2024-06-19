@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Experience(props) {
+function Main(props) {
   return (
     <main>
       <div className="content">
@@ -10,4 +10,4 @@ function Experience(props) {
   );
 }
 
-export default Experience;
+export default Main;

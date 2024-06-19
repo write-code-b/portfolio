@@ -5,7 +5,7 @@ import Tech from "./Tech";
 import Contact from "./Contact";
 import { nanoid } from "nanoid";
 
-function Content(props) {
+function Main(props) {
   const [navState, setNavState] = useState("0"); //0 or 1 or 2 / 1-> Tech, 2-> Experience
   const [isDefault, setIsDefault] = useState(true);
   // const [isPressed, setIsPressed] = useState("0");
@@ -48,4 +48,4 @@ function Content(props) {
   );
 }
 
-export default Content;
+export default Main;
