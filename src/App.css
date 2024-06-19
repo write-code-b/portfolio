@@ -238,9 +238,29 @@ main .content {
   color: #ffffff;
 }
 
+@property --startColor {
+  syntax: "<color>";
+  initial-value: #767c80;
+  inherits: false;
+}
+
+@property --endColor {
+  syntax: "<color>";
+  initial-value: #d4dfe6;
+  inherits: false;
+}
+
 .sticky_nav .active,
 .sticky_nav .tab:hover {
-  background-image: linear-gradient(to right, #767c80, #d4dfe6);
+  background: linear-gradient(var(--startColor), var(--endColor));
+  transition: --startColor 2s, --endColor 2s;
+  /* background-image: linear-gradient(to right, #767c80, #d4dfe6); */
+}
+
+.sticky_nav .active,
+.sticky_nav .tab:hover {
+  --startColor: #2b90d9;
+  --endColor: #d9e1e8;
 }
 
 .sticky_nav .active a {
