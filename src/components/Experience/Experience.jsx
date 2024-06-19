@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Description from "./Description";
 
-function Main(props) {
+function Experience(props) {
   const [experience, setExperience] = useState(props.desc);
 
   const experienceList = experience?.map((ex) => (
@@ -24,4 +24,4 @@ function Main(props) {
   );
 }
 
-export default Main;
+export default Experience;

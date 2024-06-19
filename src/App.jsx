@@ -3,8 +3,8 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Navbar";
 import Footer from "./components/Footer";
-import Main from "./components/About/Main";
-import Experience from "./components/Experience/Main";
+import Main from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 const NAV_DATA = [
   { number: "0", name: "자기소개", isPressed: true },
