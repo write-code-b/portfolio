@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar(props) {
-  const [navState, setNavState] = useState("main");
+  const location = useLocation();
+  const url = location.pathname.split("/")[1];
+  const [navState, setNavState] = useState(
+    url === "experience" ? "experience" : "main",
+  );
 
   function setNavStatus(e) {
     const nav = e.target.dataset.name;
