@@ -15,7 +15,7 @@ const NAV_DATA = [
 ];
 
 const TECH_DATA = [
-  { title: "프론트엔드", tool: ["HTML", "CSS", "Javascript"] },
+  { title: "프론트엔드", tool: ["HTML", "CSS", "Javascript", "React.js"] },
   { title: "백엔드", tool: ["Node.js", "Javascript"] },
   { title: "디자인", tool: ["Figma", "Adobe Illustrator"] },
   { title: "형상관리", tool: ["GIT", "SVN"] },
