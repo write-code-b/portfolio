@@ -141,7 +141,7 @@ table {
 .App {
   display: grid;
   grid-gap: 62px;
-  grid-template-rows: 1fr 6fr 2fr;
+  grid-template-rows: 8.75rem 6fr 2fr;
 }
 
 nav a,

@@ -50,10 +50,10 @@ function App(props) {
     <div className="App">
       <Header />
       <Routes>
-        <Route
+        {/* <Route
           path="/"
           element={<Main navs={navs} updateDate={DATE} tech={TECH_DATA} />}
-        ></Route>
+        ></Route> */}
         <Route
           path="/about"
           element={<Main navs={navs} updateDate={DATE} tech={TECH_DATA} />}
@@ -62,7 +62,7 @@ function App(props) {
           path="/Experience"
           element={<Experience desc={EXPERIENCE_DATA} />}
         ></Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/about" />} />
       </Routes>
       <Footer />
     </div>
