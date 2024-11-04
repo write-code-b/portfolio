@@ -33,16 +33,26 @@ function Contact(props) {
       <div>
         <h2>깃헙</h2>
         <div className="wrap">
-          <div className="badge">https://github.com/slow-wave</div>
+          <a
+            href="https://github.com/slow-wave"
+            target="_blank"
+            className="badge"
+          >
+            https://github.com/slow-wave
+          </a>
           <div className="copy_icon" onClick={copyToClipboard}>
             <div className="tooltip_text">복사</div>
           </div>
         </div>
         <div className="wrap">
-          <div className="badge">
+          <a
+            href="https://github.com/write-code-b"
+            target="_blank"
+            className="badge"
+          >
             https://github.com/write-code-b
             <div className="tooltip_text">퍼블리싱 관련 코드 저장소입니다.</div>
-          </div>
+          </a>
           <div className="copy_icon" onClick={copyToClipboard}>
             <div className="tooltip_text">복사</div>
           </div>

@@ -296,6 +296,7 @@ main .content section h2 {
 
 main .content section p {
   font-size: 1.25rem;
+  line-height: normal;
 }
 
 .badge {
