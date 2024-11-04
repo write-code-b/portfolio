@@ -11,6 +11,8 @@ function Experience(props) {
       desc={ex.desc}
       date={ex.date}
       tech={ex.tech}
+      role={ex.role}
+      url={ex.url}
     />
   ));
 
